@@ -1,0 +1,208 @@
+/* Domyślny styl dla wiersza zdjęć */
+.image-row {
+    display: flex;
+    flex-wrap: wrap; /* Włącza zawijanie zdjęć w razie potrzeby */
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.image-row a {
+    flex: 0 1 calc(20% - 10px); /* 5 zdjęć w jednym wierszu, z uwzględnieniem odstępu */
+    text-align: center;
+}
+
+.image-row img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsywność na urządzenia mobilne */
+@media screen and (max-width: 992px) {
+    .image-row a {
+        flex: 0 1 calc(50% - 10px); /* Dwa zdjęcia w wierszu na średnich ekranach */
+    }
+}
+
+/* Responsywność na bardzo małe urządzenia (do 600px) */
+@media screen and (max-width: 600px) {
+    .image-row a {
+        flex: 0 1 100%; /* Jedno zdjęcie na całej szerokości na małych urządzeniach */
+    }
+}
+
+/* Styl dla kontenera obrazu w modalu */
+.modal-image-container {
+    float: left;
+    width: 40%; /* Szerokość kontenera z obrazkiem */
+    margin-right: 20px; /* Odstęp od tekstu */
+    margin-bottom: 20px; /* Odstęp od dolnej krawędzi */
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* Dodaj margines dolny dla zdjęcia */
+}
+
+
+/* Styl dla tekstu w modalu */
+.modal-text {
+    overflow: hidden;
+}
+
+.modal-footer {
+    margin-top: auto;         /* Wymusza, aby stopka była zawsze na dole */
+}
+
+.modal .tabs {
+    margin: 15px 0;
+}
+
+/* Zmiany w układzie zakładek */
+.tabs .tab a {
+    padding: 0 15px;
+    transition: background-color 0.3s, color 0.3s; /* Płynne przejście dla tła i koloru */
+    color: #000; /* Kolor tekstu na zakładce */
+    background-color: #fff; /* Tło zakładki domyślnie białe */
+}
+
+.tabs .tab a.active {
+    background-color: #009688 !important; /* Kolor tła dla aktywnej zakładki */
+    color: white !important; /* Kolor tekstu aktywnej zakładki */
+}
+
+.tabs-content:not(.active) {
+    display: none !important;
+}
+
+.tabs-content.active {
+    display: block !important;
+}
+
+.pointed-list {
+    list-style-type: disc !important;  /* Wymuszenie punktatorów */
+    padding-left: 20px;                /* Odstęp od lewej */
+    margin-bottom: 10px;               /* Odstęp między listami */
+}
+
+.pointed-list li {
+    margin-bottom: 5px;                /* Odstęp między punktami */
+}
+
+.tabs .indicator {
+    background-color: #009688 !important; /* Kolor paska wskazującego aktywną zakładkę */
+}
+
+/* Pokazuj tylko aktywną zakładkę */
+.modal .tabs-content.active {
+    display: block !important;
+}
+
+/* Styl dla kontenera powiększonego obrazu */
+#largeImageModal {
+    display: none; /* Na początku niewidoczny */
+    position: fixed; /* Pozycjonowanie na stałe w oknie przeglądarki */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Ciemne tło */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Zapewni, że modal będzie na dole */
+}
+
+#largeImageModal img {
+    max-width: 90%; /* Obrazek nie przekroczy 90% szerokości ekranu */
+    max-height: 90%; /* Obrazek nie przekroczy 90% wysokości ekranu */
+    object-fit: contain; /* Zachowanie proporcji obrazu */
+}
+
+/* Przycisk zamknięcia dla powiększonego obrazu */
+#largeImageModal .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.sidenav {
+    z-index: 1000; /* Ustaw wyższy z-index, jeśli inne elementy nakładają się na menu */
+    position: fixed; /* Zapewnia, że menu jest na stałe na stronie */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* W zależności od szerokości Twojego menu */
+    background-color: #fff;
+}
+
+.sidenav-overlay{
+    z-index: 1000; /* Ustaw wyższy z-index, jeśli inne elementy nakładają się na menu */
+    position: fixed; /* Zapewnia, że menu jest na stałe na stronie */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px; /* W zależności od szerokości Twojego menu */
+    background-color: #fff;
+}
+
+body {
+    position: relative;
+    z-index: 1; /* Zapewnia, że inne elementy nie zakrywają menu */
+}
+
+/* Stylowanie przycisku X w sidenav */
+.sidenav .close-btn {
+    display: block;  /* Zmieniamy na block, aby element znajdował się na nowym wierszu */
+    right: 10px;
+    text-align: right; /* Wyrównujemy do prawej */
+    padding: 8px 100px; /* Dodajemy trochę przestrzeni wokół X */
+    width: 100%;  /* Cała szerokość dostępna na przycisk */
+}
+
+.sidenav .close-btn a {
+    font-size: 30px;  /* Rozmiar ikony */
+    color: #009688;      /* Kolor ikony */
+}
+
+.sidenav .close-btn a:hover {
+    color: #009688;  /* Kolor przycisku po najechaniu */
+}
+
+/* Reszta elementów menu */
+.sidenav li {
+    padding: 5px 0px; /* Odstępy wewnętrzne dla elementów menu */
+}
+
+.sidenav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.prod_tabs .tab a {
+    color: black;
+    font-weight: bold;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s;
+}
+
+.prod_tabs .tab a.active {
+    background-color: #009688 !important;
+    color: white !important;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+

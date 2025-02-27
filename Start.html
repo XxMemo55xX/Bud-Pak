@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
 <div class="navbar-fixed">
@@ -23,15 +24,23 @@
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
+                <!-- Przycisk zamykający menu X -->
+                <li class="close-btn">
+                    <a href="javascript:void(0)" class="sidenav-close">
+                        <i class="material-icons">close</i> <!-- Ikona X -->
+                    </a>
+                </li>
                 <li><a href="Okna.html">Okna</a></li>
                 <li><a href="Drzwi.html">Drzwi</a></li>
                 <li><a href="Bramy.html">Bramy</a></li>
                 <li><a href="Akcesoria.html">Akcesoria</a></li>
             </ul>
+
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
 </div>
+
 
 <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -42,7 +51,7 @@
                 <h5 class="header col s12 light">Aby otrzymac wycene uzyj przycisku ponizej i sprawdz adres komunikacyjny</h5>
             </div>
             <div class="row center">
-                <button onclick="scrollToElement()" class="btn-large waves-effect waves-light teal lighten-1">Napisz o wycenę</button>
+                <button onclick="scrollToElement()" class="btn-large waves-effect waves-light teal lighten-1 pulse">Napisz o wycenę</button>
             </div>
             <script>
                 function scrollToElement() {
@@ -112,7 +121,7 @@
             <div class="col s12 center">
                 <h3><i class="mdi-content-send brown-text"></i></h3>
                 <h4>Contact Us</h4>
-                <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+                <p class="left-align light">Napisz wiadomość E-Mail na adres adres@domena.pl</p>
             </div>
         </div>
 
@@ -162,16 +171,17 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2024 Bud Pak. All rights reserved.
+            © 2025 Bud Pak. All rights reserved.
         </div>
     </div>
 </footer>
 
 
 <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+<script src="js/tabs.js"></script>
 
 </body>
 </html>

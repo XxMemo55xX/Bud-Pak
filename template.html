@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Okna Bud-Pak</title>
+    <title> Bud-Pak</title>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -12,6 +12,7 @@
     <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
+
 <div class="navbar-fixed">
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
@@ -41,23 +42,60 @@
     </nav>
 </div>
 
-<!-- Zakładki z producentami -->
-<ul class="tabs prod_tabs">
-    <li class="tab col s6"><a class="active" href="#Okna_aluplast-tab">Aluplast</a></li>
-    <li class="tab col s6"><a href="#Okna_rehau-tab">Rehau</a></li>
-</ul>
+<div class="container">
+    <!-- Kategoria -->
+    <div class="category-section">
+        <h5>NAGLOWEK</h5>
+        <div class="image-row">
+            <a href="#IDEAL_4000" class="modal-trigger">
+                <h6>ELEMENT</h6>
+                <img src='img/okna_aluplast/okna_pcv/IDEAL_4000.jpg'>
+            </a>
+        </div>
+    </div>
 
-<!-- Kontener na zawartość -->
-<div id="content-section">
-    <!-- Zawartość będzie dynamicznie ładowana tutaj -->
+    <!-- Modal do powiekszonego zdjecia -->
+    <div id="largeImageModal">
+        <span class="close">&times;</span>
+        <img id="largeImage" src="" alt="Powiększone zdjęcie">
+    </div>
+
+    <!-- Modal -->
+    <div id="IDEAL_4000" class="modal">
+        <div class="modal-content">
+            <!-- Obrazek wypełniający lewą stronę -->
+            <div class="modal-image-container">
+                <img src="img/okna_aluplast/okna_pcv/TECH_ideal_4000-1.jpg" class="modal-image" alt="TECH ideal 4000">
+            </div>
+
+            <div class="modal-text">
+                <div class="modal-footer">
+                    <a href="#!" class="modal-close waves-effect waves-green btn-flat accent-4 active teal">Zamknij</a>
+                </div>
+                <h5>IDEAL 4000</h5>
+                <!-- Zakładki -->
+                <ul class="tabs">
+                    <li class="tab col s6"><a class="active" href="#cechyIDEAL_4000">Cechy</a></li>
+                    <li class="tab col s6"><a href="#opisIDEAL_4000">Opis</a></li>
+                </ul>
+                <!-- Treść pod zakładkami -->
+                <div id="cechyIDEAL_4000" class="col s12">
+                    <ul class="pointed-list">
+                        <li><i class="tiny material-icons teal circle">check</i> TRESC</li>
+                    </ul>
+                </div>
+                <div id="opisIDEAL_4000" class="col s12">
+                    <h5><b>NAGLOWEK</b></h5>
+                    <p>TRESC</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
-
-<!-- JS Dependencies -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 <script src="js/tabs.js"></script>
-<script src="js/okna.js"></script>
 </body>
 </html>
-

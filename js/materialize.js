@@ -5978,7 +5978,13 @@ $jscomp.polyfill = function (e, r, p, m) {
           start = this.percentOpen;
         } else {
           $(this._overlay).css({
-            display: 'block'
+            "z-index": "1000",
+            "position": "fixed",
+            "top": "0",
+            "left": "0",
+            "height": "100%",
+            "width": "250px",
+            "background-color": "#fff"
           });
         }
 
