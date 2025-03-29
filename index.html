@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Bud-Pak</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+<div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="index.html" class="brand-logo"><img src="img/Bud-Pak Logo/5.png" alt="Bud-Pak" height="55"></a>
+<!--            <ul class="right hide-on-med-and-down">-->
+<!--                <li><a href="Okna.html">Okna</a></li>-->
+<!--                <li><a href="Drzwi.html">Drzwi</a></li>-->
+<!--                <li><a href="Bramy.html">Bramy</a></li>-->
+<!--                <li><a href="Akcesoria.html">Akcesoria</a></li>-->
+<!--            </ul>-->
+
+<!--            <ul id="nav-mobile" class="sidenav">                &lt;!&ndash; Przycisk zamykający menu X &ndash;&gt;-->
+<!--                <li class="close-btn">-->
+<!--                    <a href="javascript:void(0)" class="sidenav-close">-->
+<!--                        <i class="material-icons">close</i> &lt;!&ndash; Ikona X &ndash;&gt;-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <li><a href="Okna.html">Okna</a></li>-->
+<!--                <li><a href="Drzwi.html">Drzwi</a></li>-->
+<!--                <li><a href="Bramy.html">Bramy</a></li>-->
+<!--                <li><a href="Akcesoria.html">Akcesoria</a></li>-->
+<!--            </ul>-->
+
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons"  style="color: rgb(14, 52, 89);">menu</i></a>
+        </div>
+    </nav>
+</div>
+
+
+<div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+        <div class="container">
+            <br><br>
+            <h2 class="header center  text-lighten-2" style="background-color: rgba(255, 255, 255, 0.7);
+           padding: 10px 20px;
+           border-radius: 10px;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+           color: rgb(14, 52, 89);
+           "><b>Twoje okno na solidne rozwiązania</b></h2>
+            <div class="row center">
+                <button onclick="scrollToElement()" class="btn-large waves-effect waves-light lighten-1 pulse" style="background-color: rgb(14, 52, 89); margin-top: 20px;">Napisz o wycenę</button>
+            </div>
+            <script>
+                function scrollToElement() {
+                    document.getElementById("kontakt").scrollIntoView({ behavior: "smooth" });
+                }
+            </script>
+            <br><br>
+
+        </div>
+    </div>
+    <div class="parallax"><img src="img/background1.webp" alt="Unsplashed background img 1"></div>
+</div>
+
+
+<div class="container">
+    <div class="section">
+
+        <!--   Icon Section   -->
+        <div class="row">
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center" style="color: rgb(14, 52, 89);"><i class="material-icons">flash_on</i></h2>
+                    <h5 class="center">Precyzja i czas</h5>
+
+                    <p class="light">Sprawnie dobieramy rozwiązania dopasowane do potrzeb klienta, stawiając na precyzję i czas, oferując starannie wyselekcjonowane okna, drzwi, bramy i akcesoria od sprawdzonych producentów.</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center " style="color: rgb(14, 52, 89);"><i class="material-icons">group</i></h2>
+                    <h5 class="center">Doradztwo i doświadczenie</h5>
+
+                    <p class="light">Zaufanie tysięcy klientów to dla nas najlepsze potwierdzenie, że potrafimy skutecznie doradzić i dobrać odpowiednie rozwiązania, oferując fachowe wsparcie na każdym etapie wyboru.</p>
+                </div>
+            </div>
+
+            <div class="col s12 m4">
+                <div class="icon-block">
+                    <h2 class="center" style="color: rgb(14, 52, 89);"><i class="material-icons">settings</i></h2>
+                    <h5 class="center">Łatwa współpraca</h5>
+                    <li class="light">Możliwy montaż w ramach indywidualnej wyceny</li>
+                    <li class="light">Transport w cenie do 100km od Otwocka</li>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax"><img src="img/background2.jpg" alt="Unsplashed background img 2"></div>
+</div>
+<div id="kontakt">
+    <br>
+</div>
+<div class="container">
+    <div class="section">
+
+        <div class="row">
+            <div class="col s12 center">
+                <div class="icon-block">
+                    <h2 class="center large" style="color: rgb(14, 52, 89);"><i class="material-icons">email</i></h2>
+                </div>
+                <h4>Napisz do nas i zapytaj o wycenę!</h4>
+                <h4><a href="mailto:pk.budpak@gmail.com"><b>pk.budpak@gmail.com</b></a></h4>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div>
+    <br>
+</div>
+
+
+<div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax"><img src="img/background3.jpeg" alt="Unsplashed background img 3"></div>
+</div>
+
+<footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Informacje</h5>
+                    <p class="grey-text text-lighten-4">Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK</p>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Kontakt</h5>
+                    <ul>
+                        <li><a class="white-text" href="tel:+48784670505">+48 784 670 505</a></li>
+                        <li><a class="white-text" href="mailto:pk.budpak@gmail.com">pk.budpak@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="col l3 s12">
+                    <h5 class="white-text">Adres</h5>
+                    <ul>
+                        <li><a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">ul. Stanisława Staszica 16, 05-400 Otwock</a></li>
+                    </ul>
+                </div>
+            </div>
+    <style>
+        /* Ustalamy wysokość mapy */
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+    <h3>Nasza lokalizacja na mapie</h3>
+    <div id="map"></div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2025 Bud Pak. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Inicjalizacja mapy
+    var map = L.map('map').setView([52.10758457210322, 21.25901819595561], 14); // Ustawienie współrzędnych (Warszawa)
+
+    // Dodanie warstwy mapy OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Dodanie pinezki na mapie
+    var marker = L.marker([52.10758457210322, 21.25901819595561]).addTo(map);
+    marker.bindPopup("<b>To jest nasza lokalizacja!</b>").openPopup();
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/tabs.js"></script>
+
+</body>
+</html>
