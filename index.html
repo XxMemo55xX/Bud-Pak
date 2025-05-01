@@ -11,30 +11,31 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 <div class="navbar-fixed">
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="index.html" class="brand-logo"><img src="img/Bud-Pak Logo/5.png" alt="Bud-Pak" height="55"></a>
-<!--            <ul class="right hide-on-med-and-down">-->
-<!--                <li><a href="Okna.html">Okna</a></li>-->
-<!--                <li><a href="Drzwi.html">Drzwi</a></li>-->
-<!--                <li><a href="Bramy.html">Bramy</a></li>-->
-<!--                <li><a href="Akcesoria.html">Akcesoria</a></li>-->
-<!--            </ul>-->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="Okna.html">Okna</a></li>
+                <li><a href="Drzwi.html">Drzwi</a></li>
+                <li><a href="Bramy.html">Bramy</a></li>
+                <li><a href="Akcesoria.html">Akcesoria</a></li>
+            </ul>
 
-<!--            <ul id="nav-mobile" class="sidenav">                &lt;!&ndash; Przycisk zamykający menu X &ndash;&gt;-->
-<!--                <li class="close-btn">-->
-<!--                    <a href="javascript:void(0)" class="sidenav-close">-->
-<!--                        <i class="material-icons">close</i> &lt;!&ndash; Ikona X &ndash;&gt;-->
-<!--                    </a>-->
-<!--                </li>-->
-<!--                <li><a href="Okna.html">Okna</a></li>-->
-<!--                <li><a href="Drzwi.html">Drzwi</a></li>-->
-<!--                <li><a href="Bramy.html">Bramy</a></li>-->
-<!--                <li><a href="Akcesoria.html">Akcesoria</a></li>-->
-<!--            </ul>-->
+            <ul id="nav-mobile" class="sidenav">                <!-- Przycisk zamykający menu X -->
+                <li class="close-btn">
+                    <a href="javascript:void(0)" class="sidenav-close">
+                        <i class="material-icons">close</i> <!-- Ikona X -->
+                    </a>
+                </li>
+                <li><a href="Okna.html">Okna</a></li>
+                <li><a href="Drzwi.html">Drzwi</a></li>
+                <li><a href="Bramy.html">Bramy</a></li>
+                <li><a href="Akcesoria.html">Akcesoria</a></li>
+            </ul>
 
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons"  style="color: rgb(14, 52, 89);">menu</i></a>
         </div>
@@ -182,20 +183,7 @@
 <!--  Scripts-->
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script>
-    // Inicjalizacja mapy
-    var map = L.map('map').setView([52.10758457210322, 21.25901819595561], 14); // Ustawienie współrzędnych (Warszawa)
-
-    // Dodanie warstwy mapy OpenStreetMap
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    // Dodanie pinezki na mapie
-    var marker = L.marker([52.10758457210322, 21.25901819595561]).addTo(map);
-    marker.bindPopup("<b>To jest nasza lokalizacja!</b>").openPopup();
-</script>
-
+<script src="js/map.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>

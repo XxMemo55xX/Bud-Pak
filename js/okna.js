@@ -1,20 +1,31 @@
 $(document).ready(function() {
     function loadContent(page) {
         $('#content-section').load(page, function() {
-            // Ponowna inicjalizacja Materialize
-            $('.modal').modal();  // Re-inicjalizacja modalów
-            $('.prod_tabs').tabs();  // Re-inicjalizacja zakładek
+            console.log("Załadowano " + page);
+
+            const modals = document.querySelectorAll('.modal');
+            M.Modal.init(modals);
+
+            const tabs = document.querySelectorAll('.tabs');
+            tabs.forEach(tab => {
+                M.Tabs.init(tab);
+            });
         });
     }
 
-    $('#Okna_aluplast-tab').on('click', function() {
+    $('#Okna_aluplast').on('click', function() {
         loadContent('Okna_aluplast.html');
-        setActiveTab('Okna_aluplast-tab');
+        setActiveTab('Okna_aluplast');
     });
 
-    $('#Okna_rehau-tab').on('click', function() {
+    $('#Okna_rehau').on('click', function() {
         loadContent('Okna_rehau.html');
-        setActiveTab('Okna_rehau-tab');
+        setActiveTab('Okna_rehau');
+    });
+
+    $('#Okna_wital').on('click', function() {
+        loadContent('Okna_wital.html');
+        setActiveTab('Okna_wital');
     });
 
     function setActiveTab(tabId) {
@@ -22,6 +33,7 @@ $(document).ready(function() {
         $('#' + tabId).addClass('active');
     }
 
-    loadContent('Okna_aluplast.html'); // Domyślnie załaduj Aluplast
+    // Domyślnie załaduj Aluplast
+    loadContent('Okna_aluplast.html');
 });
 

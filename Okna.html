@@ -10,6 +10,8 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 <div class="navbar-fixed">
@@ -17,7 +19,7 @@
         <div class="nav-wrapper container">
             <a id="logo-container" href="index.html" class="brand-logo"><img src="img/Bud-Pak Logo/5.png" alt="Bud-Pak" height="60"></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="Okna.html" class="active teal accent-4 z-depth-5">Okna</a></li>
+                <li><a href="Okna.html" class="active accent-4 z-depth-5" style="background-color: rgb(14, 52, 89); color: white">Okna</a></li>
                 <li><a href="Drzwi.html">Drzwi</a></li>
                 <li><a href="Bramy.html">Bramy</a></li>
                 <li><a href="Akcesoria.html">Akcesoria</a></li>
@@ -30,7 +32,7 @@
                         <i class="material-icons">close</i> <!-- Ikona X -->
                     </a>
                 </li>
-                <li><a href="Okna.html" class="active teal accent-4 z-depth-5">Okna</a></li>
+                <li><a href="Okna.html" class="active accent-4 z-depth-5" style="background-color: rgb(14, 52, 89); color: white">Okna</a></li>
                 <li><a href="Drzwi.html">Drzwi</a></li>
                 <li><a href="Bramy.html">Bramy</a></li>
                 <li><a href="Akcesoria.html">Akcesoria</a></li>
@@ -42,9 +44,10 @@
 </div>
 
 <!-- Zakładki z producentami -->
-<ul class="tabs prod_tabs">
-    <li class="tab col s6"><a class="active" href="#Okna_aluplast-tab">Aluplast</a></li>
-    <li class="tab col s6"><a href="#Okna_rehau-tab">Rehau</a></li>
+<ul class="tabs prod_tabs container">
+    <li class="tab col s6"><a id="Okna_aluplast" class="active " href="#Okna_aluplast-tab">Aluplast</a></li>
+    <li class="tab col s6"><a id="Okna_rehau" href="#Okna_rehau-tab">Rehau</a></li>
+    <li class="tab col s6"><a id="Okna_wital" href="#Okna_wital-tab">Wital</a></li>
 </ul>
 
 <!-- Kontener na zawartość -->
@@ -52,8 +55,49 @@
     <!-- Zawartość będzie dynamicznie ładowana tutaj -->
 </div>
 
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Informacje</h5>
+                <p class="grey-text text-lighten-4">Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK</p>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Kontakt</h5>
+                <ul>
+                    <li><a class="white-text" href="tel:+48784670505">+48 606 490 282</a></li>
+                    <li><a class="white-text" href="mailto:pk.budpak@gmail.com">pk.budpak@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Adres</h5>
+                <ul>
+                    <li><a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">ul. Stanisława Staszica 16, 05-400 Otwock</a></li>
+                </ul>
+            </div>
+        </div>
+        <style>
+            /* Ustalamy wysokość mapy */
+            #map {
+                width: 80%;
+                height: 500px;
+                margin: 0 auto;
+            }
+        </style>
+        <h5>Nasza lokalizacja na mapie</h5>
+        <div id="map"></div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 Bud-Pak. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
 <!-- JS Dependencies -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 <script src="js/tabs.js"></script>

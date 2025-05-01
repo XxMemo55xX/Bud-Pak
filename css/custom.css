@@ -69,7 +69,7 @@
 }
 
 .tabs .tab a.active {
-    background-color: #009688 !important; /* Kolor tła dla aktywnej zakładki */
+    background-color: rgb(14, 52, 89) !important; /* Kolor tła dla aktywnej zakładki */
     color: white !important; /* Kolor tekstu aktywnej zakładki */
 }
 
@@ -92,7 +92,7 @@
 }
 
 .tabs .indicator {
-    background-color: #009688 !important; /* Kolor paska wskazującego aktywną zakładkę */
+    background-color: rgb(14, 52, 89) !important; /* Kolor paska wskazującego aktywną zakładkę */
 }
 
 /* Pokazuj tylko aktywną zakładkę */
@@ -166,11 +166,11 @@ body {
 
 .sidenav .close-btn a {
     font-size: 30px;  /* Rozmiar ikony */
-    color: #009688;      /* Kolor ikony */
+    color: rgb(14, 52, 89);      /* Kolor ikony */
 }
 
 .sidenav .close-btn a:hover {
-    color: #009688;  /* Kolor przycisku po najechaniu */
+    color: rgb(14, 52, 89);  /* Kolor przycisku po najechaniu */
 }
 
 /* Reszta elementów menu */
@@ -192,7 +192,7 @@ body {
 }
 
 .prod_tabs .tab a.active {
-    background-color: #009688 !important;
+    background-color: rgb(14, 52, 89) !important;
     color: white !important;
 }
 
@@ -204,5 +204,49 @@ body {
 .tab-content.active {
     display: block;
 }
+
+/* Kolor aktywnej zakładki nawigacji i produktów */
+.tabs .tab a.active,
+.prod_tabs .tab a.active,
+.modal .tabs .tab a.active {
+    color: white !important; /* Twój główny kolor tekstu */
+    background-color: rgb(14, 52, 89) !important; /* Białe tło aktywnej zakładki */
+    font-weight: bold;
+}
+
+/* Kolor wskaźnika pod aktywną zakładką */
+.tabs .indicator,
+.modal .tabs .indicator {
+    background-color: rgb(14, 52, 89) !important; /* Twój główny kolor wskaźnika */
+}
+
+/* Kolor tekstu przy najechaniu myszką */
+.tabs .tab a:hover,
+.prod_tabs .tab a:hover,
+.modal .tabs .tab a:hover {
+    color: rgb(14, 52, 89) !important;
+}
+
+.prod_tabs .tab a.active {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+nav {
+    height: 64px;
+    line-height: 64px;
+}
+
+nav .brand-logo img {
+    max-height: 48px;
+    margin-top: 8px;
+}
+
+.tabs .indicator,
+.modal .tabs .indicator {
+    display: none !important;
+}
+
+
 
 

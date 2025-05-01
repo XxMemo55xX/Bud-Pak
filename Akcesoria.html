@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
 <div class="navbar-fixed">
@@ -19,19 +22,66 @@
                 <li><a href="Okna.html">Okna</a></li>
                 <li><a href="Drzwi.html">Drzwi</a></li>
                 <li><a href="Bramy.html">Bramy</a></li>
-                <li><a href="Akcesoria.html" class="active teal accent-4 z-depth-5">Akcesoria</a></li>
+                <li><a href="Akcesoria.html" class="active accent-4 z-depth-5" style="background-color: rgb(14, 52, 89); color: white">Akcesoria</a></li>
             </ul>
 
             <ul id="nav-mobile" class="sidenav">
                 <li><a href="Okna.html">Okna</a></li>
                 <li><a href="Drzwi.html">Drzwi</a></li>
                 <li><a href="Bramy.html">Bramy</a></li>
-                <li><a href="Akcesoria.html" class="active teal accent-4 z-depth-5">Akcesoria</a></li>
+                <li><a href="Akcesoria.html" class="active accent-4 z-depth-5" style="background-color: rgb(14, 52, 89); color: white">Akcesoria</a></li>
             </ul>
             <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         </div>
     </nav>
 </div>
 
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Informacje</h5>
+                <p class="grey-text text-lighten-4">Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK</p>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Kontakt</h5>
+                <ul>
+                    <li><a class="white-text" href="tel:+48784670505">+48 606 490 282</a></li>
+                    <li><a class="white-text" href="mailto:pk.budpak@gmail.com">pk.budpak@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Adres</h5>
+                <ul>
+                    <li><a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">ul. Stanisława Staszica 16, 05-400 Otwock</a></li>
+                </ul>
+            </div>
+        </div>
+        <style>
+            /* Ustalamy wysokość mapy */
+            #map {
+                width: 80%;
+                height: 500px;
+                margin: 0 auto;
+            }
+        </style>
+        <h5>Nasza lokalizacja na mapie</h5>
+        <div id="map"></div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 Bud-Pak. All rights reserved.
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- JS Dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="js/map.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/tabs.js"></script>
+<script src="js/okna.js"></script>
 </body>
 </html>
