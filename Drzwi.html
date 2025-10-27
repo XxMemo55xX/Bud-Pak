@@ -1,17 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Drzwi Bud-Pak</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS  -->
+    <!-- SEO: tytuł i opis dedykowane podstronie OKNA -->
+    <title>Okna PCV i aluminiowe – sprzedaż, montaż i serwis | Otwock & Warszawa | Bud-Pak</title>
+    <meta name="description" content="Bud-Pak – sprzedaż, montaż i serwis okien PCV i aluminiowych. Pomiar, doradztwo, akcesoria i serwis pogwarancyjny. Działamy w Otwocku, Warszawie i okolicach." />
+    <!-- (Opcjonalnie) keywords – nieużywane przez Google, ale można zostawić -->
+    <meta name="keywords" content="okna Otwock, okna Warszawa, okna PCV, okna aluminiowe, montaż okien, serwis okien, akcesoria do okien, parapety, rolety, usługi montażowe Otwock, usługi montażowe Warszawa" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Bud-Pak" />
+    <meta name="language" content="pl" />
+
+    <!-- Kanoniczny adres podstrony -->
+    <link rel="canonical" href="https://bud-pak.pl/Okna.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Bud-Pak" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Okna PCV i aluminiowe – sprzedaż, montaż i serwis | Bud-Pak" />
+    <meta property="og:description" content="Profesjonalny montaż i serwis okien. Otwock, Warszawa i okolice. Skontaktuj się po wycenę." />
+    <meta property="og:url" content="https://bud-pak.pl/Okna.html" />
+    <meta property="og:image" content="https://bud-pak.pl/img/og-okna.jpg" />
+    <meta property="og:locale" content="pl_PL" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Okna – sprzedaż, montaż i serwis | Bud-Pak" />
+    <meta name="twitter:description" content="Okna PCV i aluminiowe z fachowym montażem. Otwock & Warszawa." />
+    <meta name="twitter:image" content="https://bud-pak.pl/img/og-okna.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+
+    <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Dane strukturalne: LocalBusiness + WebPage + Service -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "LocalBusiness",
+                    "@id": "https://bud-pak.pl/#firmy",
+                    "name": "Bud-Pak",
+                    "legalName": "Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK",
+                    "url": "https://bud-pak.pl/",
+                    "image": "https://bud-pak.pl/img/Bud-Pak Logo/5.png",
+                    "description": "Sprzedaż, montaż i serwis okien, drzwi, bram garażowych i rolet. Akcesoria i automatyka. Otwock, Warszawa i okolice.",
+                    "telephone": "+48 606 490 282",
+                    "email": "pk.budpak@gmail.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "ul. Stanisława Staszica 16",
+                        "addressLocality": "Otwock",
+                        "postalCode": "05-400",
+                        "addressCountry": "PL"
+                    },
+                    "areaServed": [
+                        "Otwock",
+                        "Warszawa",
+                        "Józefów",
+                        "Karczew",
+                        "Mińsk Mazowiecki"
+                    ],
+                    "priceRange": "$$"
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://bud-pak.pl/Okna.html#webpage",
+                    "url": "https://bud-pak.pl/Okna.html",
+                    "name": "Okna PCV i aluminiowe – sprzedaż, montaż i serwis | Bud-Pak",
+                    "description": "Sprzedaż, montaż i serwis okien PCV i aluminiowych w Otwocku i Warszawie. Doradztwo, pomiar, akcesoria."
+                },
+                {
+                    "@type": "Service",
+                    "@id": "https://bud-pak.pl/Okna.html#service",
+                    "name": "Montaż okien",
+                    "serviceType": "Instalacja i serwis okien PCV i aluminiowych",
+                    "areaServed": ["Otwock","Warszawa","Józefów","Karczew","Mińsk Mazowiecki"],
+                    "provider": { "@id": "https://bud-pak.pl/#firmy" }
+                }
+            ]
+        }
+    </script>
 </head>
 <body>
 <div class="navbar-fixed">
@@ -36,44 +115,70 @@
     </nav>
 </div>
 
+<img src="img/technical_issues.png" class="modal-image" alt="PROBLEMY_TECHNICZNE">
+
 <footer class="page-footer">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">Informacje</h5>
-                <p class="grey-text text-lighten-4">Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK</p>
+                <p class="grey-text text-lighten-4">
+                    Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK
+                </p>
             </div>
+
             <div class="col l3 s12">
                 <h5 class="white-text">Kontakt</h5>
                 <ul>
-                    <li><a class="white-text" href="tel:+48784670505">+48 606 490 282</a></li>
+                    <li><a class="white-text" href="tel:+48606490282">+48 606 490 282</a></li>
                     <li><a class="white-text" href="mailto:pk.budpak@gmail.com">pk.budpak@gmail.com</a></li>
                 </ul>
             </div>
+
             <div class="col l3 s12">
                 <h5 class="white-text">Adres</h5>
                 <ul>
-                    <li><a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">ul. Stanisława Staszica 16, 05-400 Otwock</a></li>
+                    <li>
+                        <a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">
+                            ul. Stanisława Staszica 16, 05-400 Otwock
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
+
         <style>
-            /* Ustalamy wysokość mapy */
             #map {
                 width: 80%;
                 height: 500px;
                 margin: 0 auto;
             }
+            .footer-tags {
+                color: rgb(14, 52, 89);
+                font-size: 1px;
+                line-height: 1.2; /* mniejszy odstęp między liniami */
+                margin-top: 4px;  /* mniejszy odstęp od All rights reserved */
+            }
         </style>
+
         <h5>Nasza lokalizacja na mapie</h5>
         <div id="map"></div>
+
         <div class="footer-copyright">
             <div class="container">
-                © 2025 Bud-Pak. All rights reserved.
+                © <span id="year"></span> Bud-Pak. All rights reserved.
+                <p class="footer-tags">
+                    OKNA OTWOCK - DRZWI OTWOCK - BRAMY OTWOCK - OKNA WARSZAWA - DRZWI WARSZAWA - BRAMY WARSZAWA - MONTAŻ OKIEN - MONTAŻ DRZWI - MONTAŻ BRAM - MONTAŻ W OTWOCKU - MONTAŻ W WARSZAWIE - ROLETY - PARAPETY - KLAMKI - W OTWOCKU
+                </p>
             </div>
         </div>
     </div>
 </footer>
+
+<!-- Automatyczna aktualizacja roku -->
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <!-- JS Dependencies -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

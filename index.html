@@ -1,18 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>Bud-Pak</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS  -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <!-- Tytuł + opis dopasowane do Otwock/Warszawa -->
+    <title>Bud-Pak | Okna, Drzwi, Bramy – Montaż i Serwis w Otwocku i Warszawie</title>
+    <meta name="description" content="Bud-Pak – sprzedaż, montaż i serwis okien, drzwi, bram garażowych i rolet. Akcesoria oraz fachowy montaż. Działamy w Otwocku i Warszawie. Solidnie, terminowo, w dobrej cenie." />
+
+    <!-- (Opcjonalnie) słowa kluczowe – nie dla Google, ale możesz zostawić dla innych wyszukiwarek -->
+    <meta name="keywords" content="okna Otwock, drzwi Otwock, bramy Otwock, okna Warszawa, drzwi Warszawa, bramy Warszawa, montaż okien, montaż drzwi, montaż bram, rolety, parapety, klamki, automatyka bram, okna PCV, drzwi wejściowe, bramy segmentowe" />
+
+    <!-- Indeksowanie -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Bud-Pak" />
+    <meta name="language" content="pl" />
+
+    <!-- Kanoniczny adres strony -->
+    <link rel="canonical" href="https://bud-pak.pl/" />
+
+    <!-- Open Graph (Facebook/LinkedIn) -->
+    <meta property="og:site_name" content="Bud-Pak" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bud-Pak | Okna, Drzwi, Bramy – Montaż i Serwis w Otwocku i Warszawie" />
+    <meta property="og:description" content="Sprzedaż, montaż i serwis okien, drzwi, bram garażowych oraz akcesoriów. Otwock, Warszawa i okolice. Skontaktuj się po wycenę." />
+    <meta property="og:url" content="https://bud-pak.pl/" />
+    <meta property="og:image" content="https://bud-pak.pl/img/og-preview.jpg" />
+    <meta property="og:locale" content="pl_PL" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bud-Pak | Okna, Drzwi, Bramy – Montaż i Serwis" />
+    <meta name="twitter:description" content="Profesjonalny montaż i serwis. Otwock i Warszawa." />
+    <meta name="twitter:image" content="https://bud-pak.pl/img/og-preview.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <!-- CSS (Twoje pliki) -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- Dane strukturalne: LocalBusiness + WebSite (SEO lokalne + Sitelinks) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "LocalBusiness",
+                    "@id": "https://bud-pak.pl/#firmy",
+                    "name": "Bud-Pak",
+                    "legalName": "Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK",
+                    "url": "https://bud-pak.pl/",
+                    "image": "https://bud-pak.pl/img/Bud-Pak Logo/5.png",
+                    "description": "Sprzedaż, montaż i serwis okien, drzwi, bram garażowych i rolet. Akcesoria do stolarki i automatyka. Otwock, Warszawa i okolice.",
+                    "telephone": "+48 606 490 282",
+                    "email": "pk.budpak@gmail.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "ul. Stanisława Staszica 16",
+                        "addressLocality": "Otwock",
+                        "postalCode": "05-400",
+                        "addressCountry": "PL"
+                    },
+                    "areaServed": [
+                        "Otwock",
+                        "Warszawa",
+                        "Józefów",
+                        "Karczew",
+                        "Mińsk Mazowiecki"
+                    ],
+                    "priceRange": "$$",
+                    "sameAs": []
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://bud-pak.pl/#website",
+                    "url": "https://bud-pak.pl/",
+                    "name": "Bud-Pak",
+                    "potentialAction": {
+                        "@type": "SearchAction",
+                        "target": "https://bud-pak.pl/?q={search_term_string}",
+                        "query-input": "required name=search_term_string"
+                    }
+                }
+            ]
+        }
+    </script>
 </head>
+
 <body>
 <div class="navbar-fixed">
     <nav class="white" role="navigation">
@@ -122,8 +202,9 @@
                 <div class="icon-block">
                     <h2 class="center large" style="color: rgb(14, 52, 89);"><i class="material-icons">email</i></h2>
                 </div>
+                <h5><p>Okna, drzwi, bramy i akcesoria w Otwocku - na każdą kieszeń</p></h5>
                 <h4>Napisz do nas i zapytaj o wycenę!</h4>
-                <h4><a href="mailto:pk.budpak@gmail.com"><b>pk.budpak@gmail.com</b></a></h4>
+                <h4><a href="mailto:pk.budpak@gmail.com"><p><b>pk.budpak@gmail.com</b></p></a></h4>
             </div>
         </div>
 
@@ -141,42 +222,61 @@
 </div>
 
 <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Informacje</h5>
-                    <p class="grey-text text-lighten-4">Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK</p>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Kontakt</h5>
-                    <ul>
-                        <li><a class="white-text" href="tel:+48784670505">+48 606 490 282</a></li>
-                        <li><a class="white-text" href="mailto:pk.budpak@gmail.com">pk.budpak@gmail.com</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Adres</h5>
-                    <ul>
-                        <li><a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">ul. Stanisława Staszica 16, 05-400 Otwock</a></li>
-                    </ul>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Informacje</h5>
+                <p class="grey-text text-lighten-4">
+                    Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK
+                </p>
             </div>
+
+            <div class="col l3 s12">
+                <h5 class="white-text">Kontakt</h5>
+                <ul>
+                    <li><a class="white-text" href="tel:+48606490282">+48 606 490 282</a></li>
+                    <li><a class="white-text" href="mailto:pk.budpak@gmail.com">pk.budpak@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="col l3 s12">
+                <h5 class="white-text">Adres</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">
+                            ul. Stanisława Staszica 16, 05-400 Otwock
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <style>
-            /* Ustalamy wysokość mapy */
             #map {
                 width: 80%;
                 height: 500px;
                 margin: 0 auto;
             }
+            .footer-tags {
+                color: rgb(14, 52, 89);
+                font-size: 1px;
+                line-height: 1.2; /* mniejszy odstęp między liniami */
+                margin-top: 4px;  /* mniejszy odstęp od All rights reserved */
+            }
         </style>
+
         <h5>Nasza lokalizacja na mapie</h5>
         <div id="map"></div>
+
         <div class="footer-copyright">
             <div class="container">
-                © 2025 Bud-Pak. All rights reserved.
+                © <span id="year"></span> Bud-Pak. All rights reserved.
+                <p class="footer-tags">
+                    OKNA OTWOCK - DRZWI OTWOCK - BRAMY OTWOCK - OKNA WARSZAWA - DRZWI WARSZAWA - BRAMY WARSZAWA - MONTAŻ OKIEN - MONTAŻ DRZWI - MONTAŻ BRAM - MONTAŻ W OTWOCKU - MONTAŻ W WARSZAWIE - ROLETY - PARAPETY - KLAMKI - W OTWOCKU
+                </p>
             </div>
         </div>
-        </div>
+    </div>
 </footer>
 
 
@@ -188,6 +288,9 @@
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
 <script src="js/tabs.js"></script>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
