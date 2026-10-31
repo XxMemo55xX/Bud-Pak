@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Akcesoria do okien, drzwi i bram – sprzedaż i montaż | Otwock & Warszawa | Bud-Pak</title>
+    <title>Akcesoria do okien, drzwi i bram – Otwock | Bud-Pak</title>
     <meta name="description" content="Klamki, parapety, rolety, automatyka i inne akcesoria do okien, drzwi i bram. Sprzedaż, montaż, doradztwo. Otwock, Warszawa i okolice." />
     <meta name="keywords" content="akcesoria okienne, klamki, parapety, rolety, automatyka bram, uszczelki, montaż akcesoriów" />
     <meta name="robots" content="index, follow" />
@@ -35,6 +35,7 @@
     <link href="/css/materialize.css" rel="stylesheet" media="screen,projection" />
     <link href="/css/style.css" rel="stylesheet" media="screen,projection" />
     <link href="/css/custom.css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/site.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <!-- Structured data -->
     <script type="application/ld+json">
@@ -57,6 +58,7 @@
     </script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Przejdź do treści</a>
 <div class="navbar-fixed">
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
@@ -82,8 +84,107 @@
         </div>
     </nav>
 </div>
-<main>
-    <img src="/img/technical_issues.png" class="modal-image" alt="PROBLEMY_TECHNICZNE">
+<main id="main-content">
+    <section class="page-hero">
+        <div class="container">
+            <nav class="breadcrumbs" aria-label="Okruszki"><a href="/">Strona główna</a><span aria-hidden="true">/</span><span aria-current="page">Akcesoria</span></nav>
+            <h1>Akcesoria do okien, drzwi i bram</h1>
+            <p class="lead">Rolety, klamki, parapety i automatyka do bram. Zacznij od tego, co kupujesz, a pokażemy dodatki, które do tego pasują.</p>
+            <div class="chip-nav" role="group" aria-label="Filtr akcesoriów" id="acc-filter">
+                <button type="button" data-filter="all" aria-pressed="true">Wszystko</button>
+                <button type="button" data-filter="okien" aria-pressed="false">Do okien</button>
+                <button type="button" data-filter="drzwi" aria-pressed="false">Do drzwi</button>
+                <button type="button" data-filter="bram" aria-pressed="false">Do bram</button>
+            </div>
+        </div>
+    </section>
+    <div class="container section-pad">
+        <section class="section-head" aria-labelledby="h-acc">
+            <h2 id="h-acc">Dodatki do Twojej stolarki</h2>
+            <p id="acc-status" class="visually-hidden" role="status" aria-live="polite"></p>
+        </section>
+        <div class="acc-grid" id="acc-grid">
+            <article class="acc-card" data-for="okien">
+                <div class="acc-card__art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="10" y="8" width="44" height="8" rx="2"/><path d="M14 16v36M50 16v36M14 24h36M14 30h36M14 36h36M14 42h36M14 48h36"/><path d="M32 52v4"/><circle cx="32" cy="58" r="2"/></svg></div>
+                <div class="acc-card__body">
+                    <div class="acc-card__for"><span>Do okien</span></div>
+                    <h3 id="acc-rolety">Rolety okienne</h3>
+                    <p>Rolety dobrane do wymiarów i koloru stolarki. Zasłaniają okno przed słońcem i wzrokiem z zewnątrz, a obudowa roletowa Cassonetto z katalogu okien Wital zapewnia izolację termiczną i akustyczną.</p>
+                    <ul><li>Zabudowa zewnętrzna lub wewnętrzna</li><li>Dopasowanie kolorystyczne do okien</li></ul>
+                    <div class="acc-card__actions"><a class="bp-btn" href="/okna/#wital:CASSONETTO">Zobacz Cassonetto</a><a class="bp-btn bp-btn--ghost" href="mailto:pk.budpak@gmail.com?subject=Rolety%20okienne%20-%20zapytanie"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Zapytaj o rolety</a></div>
+                </div>
+            </article>
+            <article class="acc-card" data-for="okien drzwi">
+                <div class="acc-card__art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="8" y="10" width="14" height="44" rx="4"/><circle cx="15" cy="22" r="3"/><path d="M22 30h26a6 6 0 0 1 0 12H34"/><circle cx="15" cy="46" r="2"/></svg></div>
+                <div class="acc-card__body">
+                    <div class="acc-card__for"><span>Do okien</span><span>Do drzwi</span></div>
+                    <h3 id="acc-klamki">Klamki</h3>
+                    <p>Klamki okienne i drzwiowe w różnych kolorach i wykończeniach. Dobierzemy je do okuć, drzwi i wnętrza.</p>
+                    <ul><li>Do okien i drzwi balkonowych</li><li>Do drzwi wejściowych i wewnętrznych</li></ul>
+                    <div class="acc-card__actions"><a class="bp-btn" href="mailto:pk.budpak@gmail.com?subject=Klamki%20-%20zapytanie"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Zapytaj o klamki</a></div>
+                </div>
+            </article>
+            <article class="acc-card" data-for="okien">
+                <div class="acc-card__art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="14" y="8" width="36" height="34" rx="2"/><path d="M32 8v34M14 25h36"/><path d="M6 46h52v6H6z"/><path d="M10 52v4M54 52v4"/></svg></div>
+                <div class="acc-card__body">
+                    <div class="acc-card__for"><span>Do okien</span></div>
+                    <h3 id="acc-parapety">Parapety</h3>
+                    <p>Parapety wewnętrzne i zewnętrzne dopasowane do okna i grubości ściany.</p>
+                    <ul><li>Parapety wewnętrzne</li><li>Parapety zewnętrzne</li></ul>
+                    <div class="acc-card__actions"><a class="bp-btn" href="mailto:pk.budpak@gmail.com?subject=Parapety%20-%20zapytanie"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Zapytaj o parapety</a></div>
+                </div>
+            </article>
+            <article class="acc-card" data-for="bram">
+                <div class="acc-card__art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="6" y="14" width="52" height="38" rx="3"/><path d="M6 24h52M6 32h52M6 40h52"/><rect x="22" y="4" width="20" height="8" rx="2"/><path d="M32 12v2"/></svg></div>
+                <div class="acc-card__body">
+                    <div class="acc-card__for"><span>Do bram</span></div>
+                    <h3 id="acc-napedy">Napędy do bram garażowych</h3>
+                    <p>Trzy napędy marki WIŚNIOWSKI do bram segmentowych: METRO Smart io, MOTO io i SPARK. Różnią się wyposażeniem i sposobem sterowania.</p>
+                    <ul><li>METRO Smart io: szyna łańcuchowa, lampa LED</li><li>MOTO io: gotowy do pracy w niecałą minutę</li><li>SPARK: wbudowane Wi-Fi</li></ul>
+                    <div class="acc-card__actions"><a class="bp-btn" href="/bramy/#automatyka">Porównaj napędy</a></div>
+                </div>
+            </article>
+            <article class="acc-card" data-for="bram">
+                <div class="acc-card__art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><rect x="20" y="6" width="24" height="52" rx="8"/><circle cx="32" cy="20" r="4"/><circle cx="26" cy="34" r="3"/><circle cx="38" cy="34" r="3"/><circle cx="26" cy="45" r="3"/><circle cx="38" cy="45" r="3"/></svg></div>
+                <div class="acc-card__body">
+                    <div class="acc-card__for"><span>Do bram</span></div>
+                    <h3 id="acc-piloty">Piloty i sterowanie</h3>
+                    <p>Piloty, odbiorniki i klawiatura szyfrowa do bram garażowych. Klawiatura ENTRAcode+ obsługuje do 5 urządzeń, ma stopień ochrony IP 54 i zasięg do 30 m (dane producenta).</p>
+                    
+                    <div class="acc-card__actions"><a class="bp-btn" href="mailto:pk.budpak@gmail.com?subject=Piloty%20i%20sterowanie%20bram%20-%20zapytanie"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Zapytaj o piloty</a></div>
+                </div>
+            </article>
+            <article class="acc-card" data-for="okien drzwi bram">
+                <div class="acc-card__art"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="24"/><path d="M26 25a6 6 0 1 1 8 5.6c-1.4.7-2 1.7-2 3.4"/><circle cx="32" cy="43" r="1.5"/></svg></div>
+                <div class="acc-card__body">
+                    <div class="acc-card__for"><span>Do okien</span><span>Do drzwi</span><span>Do bram</span></div>
+                    <h3 id="acc-inne">Szukasz czegoś innego?</h3>
+                    <p>Lista nie wyczerpuje oferty. Napisz, czego potrzebujesz, a sprawdzimy dostępność i cenę.</p>
+                    
+                    <div class="acc-card__actions"><a class="bp-btn" href="mailto:pk.budpak@gmail.com?subject=Akcesoria%20-%20zapytanie"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>Napisz do nas</a></div>
+                </div>
+            </article>
+        </div>
+
+        <section class="section-head" aria-labelledby="h-jak2">
+            <h2 id="h-jak2">Jak to wygląda</h2>
+        </section>
+        <ol class="steps">
+            <li><strong>Napisz lub zadzwoń</strong>Opisz, co kupujesz lub wymieniasz, i podaj wymiary.</li>
+            <li><strong>Dobieramy dodatki</strong>Proponujemy rozwiązania pasujące do Twojego okna, drzwi lub bramy.</li>
+            <li><strong>Dostawa i montaż</strong>Transport w cenie do 100 km od Otwocka, a montaż po indywidualnej wycenie.</li>
+        </ol>
+    </div>
+    <section class="cta-band" aria-labelledby="cta-title">
+        <div class="container">
+            <h2 id="cta-title">Nie wiesz, co wybrać?</h2>
+            <p>Opisz, co kupujesz, a podpowiemy pasujące akcesoria i przygotujemy wycenę.</p>
+            <div class="cta-band__actions">
+                <a class="bp-btn bp-btn--light" href="mailto:pk.budpak@gmail.com"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>pk.budpak@gmail.com</a>
+                <a class="bp-btn bp-btn--outline-light" href="tel:+48606490282"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg>+48 606 490 282</a>
+            </div>
+        </div>
+    </section>
 </main>
 <footer class="page-footer">
     <div class="container">
@@ -150,7 +251,9 @@
 <script src="/js/map.js"></script>
 <script src="/js/materialize.js"></script>
 <script src="/js/init.js"></script>
+<script src="/js/lightbox.js"></script>
+<script src="/js/catalog.js"></script>
 <script src="/js/tabs.js"></script>
-<script src="/js/okna.js"></script>
+<script src="/js/akcesoria.js"></script>
 </body>
 </html>

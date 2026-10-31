@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nie znaleziono strony | Bud-Pak</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="/css/materialize.css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/style.css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/custom.css" rel="stylesheet" media="screen,projection" />
+    <link href="/css/site.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Przejdź do treści</a>
+<div class="navbar-fixed">
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="/" class="brand-logo"><img src="/img/Bud-Pak Logo/5.png" alt="Bud-Pak" height="55"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="/okna/">Okna</a></li>
+                <li><a href="/drzwi/">Drzwi</a></li>
+                <li><a href="/bramy/">Bramy</a></li>
+                <li><a href="/akcesoria/">Akcesoria</a></li>
+            </ul>
+            <ul id="nav-mobile" class="sidenav">                <!-- Przycisk zamykający menu X -->
+                <li class="close-btn">
+                    <button class="sidenav-close" aria-label="Zamknij menu" style="background:none;border:none;">
+                        <i class="material-icons">close</i>
+                    </button>
+                </li>
+                <li><a href="/okna/">Okna</a></li>
+                <li><a href="/drzwi/">Drzwi</a></li>
+                <li><a href="/bramy/">Bramy</a></li>
+                <li><a href="/akcesoria/">Akcesoria</a></li>
+            </ul>
+            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons"  style="color: rgb(14, 52, 89);">menu</i></a>
+        </div>
+    </nav>
+</div>
+<main id="main-content">
+    <div class="container error-page">
+        <h1>Nie znaleziono strony</h1>
+        <p>Adres, który wpisałeś, nie istnieje albo strona została przeniesiona. Wejdź na stronę główną albo wybierz jedną z kategorii.</p>
+        <p>
+            <a class="bp-btn" href="/">Strona główna</a>
+            <a class="bp-btn bp-btn--ghost" href="/okna/">Okna</a>
+            <a class="bp-btn bp-btn--ghost" href="/drzwi/">Drzwi</a>
+            <a class="bp-btn bp-btn--ghost" href="/bramy/">Bramy</a>
+            <a class="bp-btn bp-btn--ghost" href="/akcesoria/">Akcesoria</a>
+        </p>
+    </div>
+</main>
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Informacje</h5>
+                <p class="grey-text text-lighten-4">
+                    Przedsiębiorstwo - Handlowo - Usługowe BUD-PAK PIOTR KILISZCZYK
+                </p>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Kontakt</h5>
+                <ul>
+                    <li><a class="white-text" href="tel:+48606490282">+48 606 490 282</a></li>
+                    <li><a class="white-text" href="mailto:pk.budpak@gmail.com">pk.budpak@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Adres</h5>
+                <ul>
+                    <li>
+                        <a class="white-text" href="https://maps.app.goo.gl/fhwsiT3UDhZFysfw8">
+                            ul. Stanisława Staszica 16, 05-400 Otwock
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <style>
+            #map {
+                width: 80%;
+                height: 500px;
+                margin: 0 auto;
+            }
+            .footer-tags {
+                color: rgb(14, 52, 89);
+                /*font-size: 1px;*/
+                /*line-height: 1.2; !* mniejszy odstęp między liniami *!*/
+                /*margin-top: 4px;  !* mniejszy odstęp od All rights reserved *!*/
+            }
+        </style>
+        <h5>Nasza lokalizacja na mapie</h5>
+        <div id="map"></div>
+        <div class="footer-copyright">
+            <div class="container">
+                <p class="grey-text text-lighten-4">
+                    Firma <b>Bud-Pak</b> specjalizuje się w sprzedaży, montażu i serwisie <b>okien, drzwi i bram garażowych</b>
+                    na terenie <b>Otwocka, Warszawy i okolic</b>. Oferujemy również <b>rolety, parapety i akcesoria okienne</b>,
+                    zapewniając solidny montaż, doradztwo techniczne i konkurencyjne ceny. Jesteśmy lokalnym partnerem w zakresie
+                    <b>stolarki budowlanej</b>. <b>Bud-Pak</b> to sprawdzony wybór dla domu i firmy.
+                </p>
+                <a class="center-align text-lighten-4 grey-text">© <span id="year"></span> Bud-Pak. All rights reserved.</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="/js/map.js"></script>
+<script src="/js/materialize.js"></script>
+<script src="/js/init.js"></script>
+</body>
+</html>

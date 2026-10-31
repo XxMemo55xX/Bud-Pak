@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title> Bud-Pak</title>
+    <title>Bud-Pak (szablon)</title>
+    <meta name="robots" content="noindex, nofollow"/>
 
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/custom.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/site.css" rel="stylesheet"/>
 </head>
 <body>
 
@@ -49,16 +51,11 @@
         <div class="image-row">
             <a href="#IDEAL_4000" class="modal-trigger">
                 <h6>ELEMENT</h6>
-                <img src='img/okna_aluplast/okna_pcv/IDEAL_4000.jpg'>
+                <img src='img/okna_aluplast/okna_pcv/IDEAL_4000.jpg' alt="Profil okienny PRODUCENT MODEL, przekrój" loading="lazy" decoding="async">
             </a>
         </div>
     </div>
 
-    <!-- Modal do powiekszonego zdjecia -->
-    <div id="largeImageModal">
-        <span class="close">&times;</span>
-        <img id="largeImage" src="" alt="Powiększone zdjęcie">
-    </div>
 
     <!-- Modal -->
     <div id="IDEAL_4000" class="modal">
@@ -96,6 +93,8 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="/js/materialize.js"></script>
 <script src="/js/init.js"></script>
+<script src="/js/lightbox.js"></script>
+<script src="/js/catalog.js"></script>
 <script src="/js/tabs.js"></script>
 </body>
 </html>
